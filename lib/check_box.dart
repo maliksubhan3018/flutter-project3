@@ -65,6 +65,9 @@ class _CheckBoxState extends State<CheckBox> {
             isagree = value!;
             setState(() {});
           },
+
+
+          
        ),
            SizedBox(height: 10),
           ElevatedButton(
