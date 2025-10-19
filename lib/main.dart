@@ -1,7 +1,8 @@
 //import 'package:figma_project/card_page.dart';
 //import 'package:figma_project/detaile_page.dart';
 
-import 'package:figma_project/practice.dart';
+// import 'package:figma_project/practice.dart';
+import 'package:figma_project/tabs_class.dart';
 //import 'package:figma_project/rich_text.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Practice(), // ✅ Correct call
+      home: const TabsClass(), // ✅ Correct call
     );
   }
 }
