@@ -1,10 +1,9 @@
-//import 'package:figma_project/card_page.dart';
-//import 'package:figma_project/detaile_page.dart';
 
-// import 'package:figma_project/practice.dart';
-import 'package:figma_project/tabs_class.dart';
-//import 'package:figma_project/rich_text.dart';
+import 'package:figma_project/config/route.dart';
+import 'package:figma_project/config/route_name.dart';
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 
 void main() {
@@ -16,14 +15,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const TabsClass(), // ✅ Correct call
+       getPages: AppRoutes.routes(),
+       initialRoute: MyPagesName.myhero,
+      //home: const Myhero(), // ✅ Correct call
     );
   }
 }
