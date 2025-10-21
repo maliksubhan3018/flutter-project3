@@ -13,26 +13,27 @@ class Myhero extends StatefulWidget {
 }
 
 class _MyheroState extends State<Myhero> {
-  bool anim=true;
+  bool anim = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(
-          
           children: [
-            // Lottie.asset(MyImages.circleanim, width: 200),
+             Lottie.asset(MyImages.myanim, width: 200),
             // Lottie.asset('assets/figma_images/anime.json'),
-            Lottie.asset('assets/figma_images/construction.json',width: 250,),
-            SizedBox(height: 20,),
-TextButton(onPressed:(){
-  anim=!anim;
-  setState(() {
-    
-  });
-} , child: Text("mybutton")),
-            SizedBox(height: 20,)
-,            // Image.asset('assets/figma_images/image.png'),
+            Lottie.asset('assets/figma_images/construction.json', width: 250),
+            SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                anim = !anim;
+                setState(() {});
+              },
+              child: Text("mybutton"),
+            ),
+            SizedBox(
+              height: 20,
+            ), // Image.asset('assets/figma_images/image.png'),
             Hero(
               tag: "developer",
               child: ListTile(

@@ -1,4 +1,7 @@
+import 'package:figma_project/myhero.dart';
+import 'package:figma_project/video_player.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Classs21 extends StatefulWidget {
   const Classs21({super.key});
@@ -8,7 +11,6 @@ class Classs21 extends StatefulWidget {
 }
 
 class _Classs21State extends State<Classs21> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,7 +92,7 @@ Tooltip(
   showDuration:  Duration(seconds: 2),
   child:  Icon(Icons.person, size: 40, color: Colors.teal),
 ),
-SizedBox(height: 2,),
+SizedBox(height: 40,),
 
 // badge area 
 Row(
@@ -114,6 +116,14 @@ Row(
     ),
   ],
 ),
+SizedBox(height: 10,),
+ElevatedButton(
+          onPressed: () {
+            // 👇 Navigate to another screen using GetX
+            Get.to(() => const Myhero());
+          },
+          child: const Text("Go to Second Screen"),
+        ),
 
 
 
