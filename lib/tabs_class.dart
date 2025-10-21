@@ -27,6 +27,7 @@ class _TabsClassState extends State<TabsClass>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       // ✅ Drawer automatically slides from the left side
       drawer: Drawer(
         

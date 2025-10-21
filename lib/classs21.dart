@@ -1,5 +1,5 @@
 import 'package:figma_project/myhero.dart';
-import 'package:figma_project/video_player.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,6 +14,7 @@ class _Classs21State extends State<Classs21> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(

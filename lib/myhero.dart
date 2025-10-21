@@ -17,6 +17,7 @@ class _MyheroState extends State<Myhero> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
         child: Column(
           children: [
