@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
        getPages: AppRoutes.routes(),
-       initialRoute: MyPagesName.myhero,
+       initialRoute: MyPagesName.class21,
       //home: const Myhero(), // ✅ Correct call
     );
   }
