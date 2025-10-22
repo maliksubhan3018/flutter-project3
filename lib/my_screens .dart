@@ -1,6 +1,7 @@
 // ignore: file_names
 import 'package:figma_project/classs21.dart';
 import 'package:figma_project/myhero.dart';
+import 'package:figma_project/slideable_tile.dart';
 import 'package:figma_project/sliver_appbar.dart';
 import 'package:figma_project/tabs_class.dart';
 import 'package:figma_project/video_player.dart';
@@ -53,6 +54,14 @@ class MyScreens  extends StatelessWidget {
            Get.to(() => const SliverAppBarExample());
           },
           child: const Text("sliver app  bar"),
+        ),
+         SizedBox(height: 5,),
+         ElevatedButton(
+          onPressed: () {
+            // 👇 Navigate to another screen using GetX
+           Get.to(() => const Slideablelist());
+          },
+          child: const Text("slidable list tile"),
         ),
         ],
       ),
