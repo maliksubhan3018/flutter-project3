@@ -9,9 +9,15 @@ import 'package:figma_project/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class MyScreens extends StatelessWidget {
+class MyScreens extends StatefulWidget {
   const MyScreens({super.key});
 
+  @override
+  State<MyScreens> createState() => _MyScreensState();
+}
+
+class _MyScreensState extends State<MyScreens> {
+  bool isSwitched = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,6 +75,15 @@ class MyScreens extends StatelessWidget {
               Get.to(() => const Updatedtabs());
             },
             child: const Text("updated tabs"),
+          ),
+          SizedBox(height: 5),
+          Switch(
+            value: isSwitched,
+            onChanged: (bool value) {
+              setState(() {
+                isSwitched = value;
+              });
+            },
           ),
         ],
       ),
