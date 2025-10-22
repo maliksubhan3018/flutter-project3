@@ -29,23 +29,26 @@ class _TabsClassState extends State<TabsClass>
     return Scaffold(
       
       // ✅ Drawer automatically slides from the left side
-      drawer: Drawer(
-        
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            // Optional header for style
-            // Your menu items
-            ...menuitems.map((item) {
-              return ListTile(
-                title: Text(item),
-                onTap: () {
-                  Navigator.pop(context); // close the drawer
-                 
-                },
-              );
-            }).toList(),
-          ],
+      drawer: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Drawer(
+          
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              // Optional header for style
+              // Your menu items
+              ...menuitems.map((item) {
+                return ListTile(
+                  title: Text(item),
+                  onTap: () {
+                    Navigator.pop(context); // close the drawer
+                   
+                  },
+                );
+              }).toList(),
+            ],
+          ),
         ),
       ),
 

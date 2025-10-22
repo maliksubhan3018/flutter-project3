@@ -1,7 +1,9 @@
 // ignore: file_names
 import 'package:figma_project/classs21.dart';
 import 'package:figma_project/myhero.dart';
+import 'package:figma_project/sliver_appbar.dart';
 import 'package:figma_project/tabs_class.dart';
+import 'package:figma_project/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -34,7 +36,23 @@ class MyScreens  extends StatelessWidget {
             // 👇 Navigate to another screen using GetX
            Get.to(() => const TabsClass());
           },
-          child: const Text("screen 21"),
+          child: const Text("tabs"),
+        ),
+        SizedBox(height: 10,),
+        ElevatedButton(
+          onPressed: () {
+            // 👇 Navigate to another screen using GetX
+           Get.to(() => const VideoExample());
+          },
+          child: const Text("video player"),
+        ),
+        SizedBox(height: 5,),
+         ElevatedButton(
+          onPressed: () {
+            // 👇 Navigate to another screen using GetX
+           Get.to(() => const SliverAppBarExample());
+          },
+          child: const Text("sliver app  bar"),
         ),
         ],
       ),

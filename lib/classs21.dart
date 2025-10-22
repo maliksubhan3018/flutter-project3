@@ -50,9 +50,10 @@ class _Classs21State extends State<Classs21> {
             ),
 
             SizedBox(height: 10),
-// chip area 
+            // chip area
             Chip(
-              label: Text("coding ygugytdrvjb yuffxvj,gcgfxxcj bn vcxgcrf"),
+              label: Text("coding "),
+
               avatar: Icon(Icons.code),
               backgroundColor: Colors.cyanAccent,
             ),
@@ -73,61 +74,55 @@ class _Classs21State extends State<Classs21> {
                 Chip(label: Text('Firebase')),
               ],
             ),
-            SizedBox(height: 3,),
-            // tooltip area 
-          Tooltip(
-            message: "this is my page info",
-            // ignore: sort_child_properties_last
-            child: Icon(Icons.info,size: 60,),
-            preferBelow: true,
-          ),
-          SizedBox(height: 2,),
-Tooltip(
-  message: 'Profile Settings',
-  decoration: BoxDecoration(
-    color: Colors.teal,
-    borderRadius: BorderRadius.circular(10),
-  ),
-  textStyle:  TextStyle(color: Colors.white, fontSize: 14),
-  waitDuration:  Duration(milliseconds: 500), // delay before showing
-  showDuration:  Duration(seconds: 2),
-  child:  Icon(Icons.person, size: 40, color: Colors.teal),
-),
-SizedBox(height: 40,),
+            SizedBox(height: 3),
+            // tooltip area
+            Tooltip(
+              message: "this is my page info",
+              // ignore: sort_child_properties_last
+              child: Icon(Icons.info, size: 60),
+              preferBelow: true,
+            ),
+            SizedBox(height: 2),
+            Tooltip(
+              message: 'Profile Settings',
+              decoration: BoxDecoration(
+                color: Colors.teal,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              textStyle: TextStyle(color: Colors.white, fontSize: 14),
+              waitDuration: Duration(milliseconds: 500), // delay before showing
+              showDuration: Duration(seconds: 2),
+              child: Icon(Icons.person, size: 40, color: Colors.teal),
+            ),
+            SizedBox(height: 40),
 
-// badge area 
-Row(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    Badge(
-      label: Text('2'),
-      child: Icon(Icons.message, size: 40),
-    ),
-     SizedBox(width: 20),
-    Badge(
-      label: Text('7'),
-      backgroundColor: Colors.orange,
-      child: Icon(Icons.shopping_cart, size: 40),
-    ),
-     SizedBox(width: 20),
-    Badge(
-      backgroundColor: Colors.green,
-      label: Text(''),
-      child: Icon(Icons.person, size: 40),
-    ),
-  ],
-),
-SizedBox(height: 10,),
-ElevatedButton(
-          onPressed: () {
-            // 👇 Navigate to another screen using GetX
-            Get.to(() => const Myhero());
-          },
-          child: const Text("Go to Second Screen"),
-        ),
-
-
-
+            // badge area
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Badge(label: Text('2'), child: Icon(Icons.message, size: 40)),
+                SizedBox(width: 20),
+                Badge(
+                  label: Text('7'),
+                  backgroundColor: Colors.orange,
+                  child: Icon(Icons.shopping_cart, size: 40),
+                ),
+                SizedBox(width: 20),
+                Badge(
+                  backgroundColor: Colors.green,
+                  label: Text(''),
+                  child: Icon(Icons.person, size: 40),
+                ),
+              ],
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                // 👇 Navigate to another screen using GetX
+                Get.to(() => const Myhero());
+              },
+              child: const Text("Go to Second Screen"),
+            ),
           ],
         ),
       ),
