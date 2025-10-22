@@ -27,12 +27,9 @@ class _TabsClassState extends State<TabsClass>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      // ✅ Drawer automatically slides from the left side
       drawer: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Drawer(
-          
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
@@ -43,7 +40,6 @@ class _TabsClassState extends State<TabsClass>
                   title: Text(item),
                   onTap: () {
                     Navigator.pop(context); // close the drawer
-                   
                   },
                 );
               }).toList(),
@@ -115,7 +111,7 @@ class _TabsClassState extends State<TabsClass>
         children: [
           Text(title, style: const TextStyle(fontSize: 24)),
           const SizedBox(height: 20),
-          Container(width: 50, height: 50, color: color),
+          Container(width: 100, height: 100, color: color),
         ],
       ),
     );
