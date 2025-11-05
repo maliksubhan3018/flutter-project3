@@ -5,5 +5,6 @@ class MyPagesName {
    static const String myhero = "/Myhero";
    static const String class21 = "/Class21";
    static const String myScreens = "/MyScreens";
+   static const String dataTable = "/DataTable";
   
 }

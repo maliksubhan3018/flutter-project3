@@ -17,7 +17,7 @@ class SliverAppBarExample extends StatelessWidget {
             title: const Text("Sliver App Bar"),
             expandedHeight: screenHeight * 0.25,
             backgroundColor: Colors.blueAccent,
-            floating: false,
+            // floating: true,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Image.asset(

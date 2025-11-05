@@ -1,10 +1,13 @@
 // ignore: file_names
+import 'package:figma_project/carapp.dart';
 import 'package:figma_project/classs21.dart';
 import 'package:figma_project/myhero.dart';
+import 'package:figma_project/shimmer_loading.dart';
 import 'package:figma_project/slideable_tile.dart';
 import 'package:figma_project/sliver_appbar.dart';
 import 'package:figma_project/tabs_class.dart';
 import 'package:figma_project/tabs_updated.dart';
+import 'package:figma_project/timer_example.dart';
 import 'package:figma_project/video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +28,6 @@ class _MyScreensState extends State<MyScreens> {
         children: [
           ElevatedButton(
             onPressed: () {
-              // 👇 Navigate to another screen using GetX
               Get.to(() => const Myhero());
             },
             child: const Text("my hero"),
@@ -33,7 +35,6 @@ class _MyScreensState extends State<MyScreens> {
           SizedBox(height: 5),
           ElevatedButton(
             onPressed: () {
-              // 👇 Navigate to another screen using GetX
               Get.to(() => const Classs21());
             },
             child: const Text("screen 21"),
@@ -41,7 +42,6 @@ class _MyScreensState extends State<MyScreens> {
           SizedBox(height: 5),
           ElevatedButton(
             onPressed: () {
-              // 👇 Navigate to another screen using GetX
               Get.to(() => const TabsClass());
             },
             child: const Text("tabs"),
@@ -49,7 +49,6 @@ class _MyScreensState extends State<MyScreens> {
           SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {
-              // 👇 Navigate to another screen using GetX
               Get.to(() => const VideoExample());
             },
             child: const Text("video player"),
@@ -57,7 +56,6 @@ class _MyScreensState extends State<MyScreens> {
           SizedBox(height: 5),
           ElevatedButton(
             onPressed: () {
-              // 👇 Navigate to another screen using GetX
               Get.to(() => const SliverAppBarExample());
             },
             child: const Text("sliver app  bar"),
@@ -77,6 +75,8 @@ class _MyScreensState extends State<MyScreens> {
             child: const Text("updated tabs"),
           ),
           SizedBox(height: 5),
+
+          // switch button example
           Switch(
             value: isSwitched,
             onChanged: (bool value) {
@@ -85,6 +85,36 @@ class _MyScreensState extends State<MyScreens> {
               });
             },
           ),
+          SizedBox(height: 5),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(() => const Shimmerloading());
+            },
+            child: const Text("shimmer loading"),
+          ),
+          SizedBox(height: 5),
+          //  ElevatedButton(
+          //   onPressed: () {
+          //                   Get.to(() =>const  DataTable());
+
+          //   },
+          //   child: const Text("data table ")
+          // ),
+          SizedBox(height: 5),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(() => const TimerExample());
+            },
+            child: const Text("timer example "),
+          ),
+          SizedBox(height: 5),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(() => const CarApp());
+            },
+            child: const Text("car app "),
+          ),
+          SizedBox(height: 5),
         ],
       ),
     );

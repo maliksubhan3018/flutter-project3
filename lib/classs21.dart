@@ -80,7 +80,7 @@ class _Classs21State extends State<Classs21> {
               message: "this is my page info",
               // ignore: sort_child_properties_last
               child: Icon(Icons.info, size: 60),
-              preferBelow: true,
+              preferBelow: false,
             ),
             SizedBox(height: 2),
             Tooltip(

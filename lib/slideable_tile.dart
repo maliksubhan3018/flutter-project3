@@ -19,6 +19,7 @@ class Slideablelist extends StatelessWidget {
             expandedHeight: 150,
             flexibleSpace: FlexibleSpaceBar(
               title: Text("Slideable Sliver List"),
+
               background: FlutterLogo(),
             ),
           ),
@@ -64,9 +65,10 @@ class Slideablelist extends StatelessWidget {
                     color: Colors.amber,
                     child: ListTile(
                       tileColor: Colors.amber,
+
                       leading: const Icon(Icons.label),
                       title: Text(items[index]),
-                      subtitle: const Text("Swipe to see actions"),
+                      subtitle: const Text('Swipe to see actions'),
                       trailing: const Icon(Icons.arrow_forward_ios, size: 16),
                     ),
                   ),
