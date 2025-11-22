@@ -9,6 +9,8 @@ import 'package:figma_project/tabs_class.dart';
 import 'package:figma_project/tabs_updated.dart';
 import 'package:figma_project/timer_example.dart';
 import 'package:figma_project/video_player.dart';
+import 'package:figma_project/view/home_screen.dart';
+import 'package:figma_project/view/image_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -115,6 +117,19 @@ class _MyScreensState extends State<MyScreens> {
             child: const Text("car app "),
           ),
           SizedBox(height: 5),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(() => const HomeScreen());
+            },
+            child: const Text("home screen "),
+          ),
+          SizedBox(height: 5,),
+          ElevatedButton(
+            onPressed: () {
+              Get.to(() => const ImagePicker());
+            },
+            child: const Text("image picker "),
+          ),
         ],
       ),
     );

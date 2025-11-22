@@ -146,7 +146,7 @@ class _CarTableScreenState extends State<CarTableScreen> {
       backgroundColor: const Color(0xfff5f5f5),
       appBar: AppBar(
         title: const Text('Car Product Table 🚘'),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         centerTitle: true,
       ),
       body: Padding(
